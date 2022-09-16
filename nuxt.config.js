@@ -1,6 +1,6 @@
 export default {
 
-  
+
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
 
@@ -44,35 +44,35 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/apollo',
+    // '@nuxtjs/apollo',
   ],
 
-  
 
-  apollo: {
-    clientConfigs: {
-      // default: {
-      //   httpEndpoint: process.env.URL,
-      //   httpLinkOptions: {
-      //     headers:{
-      //         'x-hasura-admin-secret': process.env.KEY
-      //     }
-      // },
-      // cookieAttributes: {
-      //   secure: true
-      // }
-       
-      // },
-      default: {
-        httpEndpoint: process.env.BLOG_URL,
-       
-      },
-     
-    },
-    
-  },
 
-  
+  // apollo: {
+  //   clientConfigs: {
+  //     // default: {
+  //     //   httpEndpoint: process.env.URL,
+  //     //   httpLinkOptions: {
+  //     //     headers:{
+  //     //         'x-hasura-admin-secret': process.env.KEY
+  //     //     }
+  //     // },
+  //     // cookieAttributes: {
+  //     //   secure: true
+  //     // }
+
+  //     // },
+  //     default: {
+  //       httpEndpoint: 'https://swapi-graphql.netlify.app/.netlify/functions/index',//process.env.BLOG_URL,
+
+  //     },
+
+  //   },
+
+  // },
+
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
