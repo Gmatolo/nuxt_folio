@@ -1,15 +1,23 @@
 <template>
-  <section class=" h-screen bd-grid items-center" id="home">
+  <section class="h-screen bd-grid items-center" id="home">
     <div class="flex text-white flex-col items-center justify-center h-max">
-      <p v-if="developmentMode" class=" text-red-400 mb-4">
+      <p v-if="developmentMode" class="text-red-400 mb-4">
         "Site still under active development"
       </p>
-      <h3 class="text-lg text-center">👋Hi There, I'm</h3>
+      <h3 class="text-lg text-center">👋Nice to meet you, I'm</h3>
       <h1 class="text-6xl text-center font-light">
-        Paul <span class="font-bold">Imoke</span>
+        Jidechi <span class="font-bold">Ukor</span>
       </h1>
-      <div
-        class="text-yellow-500 mt-2 text-lg h-8 flex justify-center overflow-hidden"
+      <!-- <div
+        class="
+          text-yellow-500
+          mt-2
+          text-lg
+          h-8
+          flex
+          justify-center
+          overflow-hidden
+        "
       >
         <div class="pl-2 text-center slider overflow-hidden">
           <div class="text1">A Software Developer</div>
@@ -17,6 +25,20 @@
           <div class="text3">Designer</div>
           <div class="text4">Christian</div>
         </div>
+      </div> -->
+      <div
+        class="
+          text-yellow-500
+          mt-2
+          text-lg
+          h-8
+          flex
+          justify-center
+          pl-2
+          text-center
+        "
+      >
+        A Software Developer
       </div>
     </div>
   </section>
@@ -27,9 +49,9 @@ export default {
   name: "Home",
   props: {
     developmentMode: {
-      type: Boolean
-    }
-  }
+      type: Boolean,
+    },
+  },
 };
 </script>
 

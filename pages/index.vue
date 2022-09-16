@@ -9,7 +9,7 @@
       <main class="bg-black w-full xl:ml-4">
         <Home :developmentMode="false" />
         <About :siteData="siteData" :tools="tools" />
-        <Services />
+        <!-- <Services /> -->
         <Works />
         <Contact />
       </main>
@@ -50,20 +50,91 @@ export default {
     return {
       siteData: {
         profileImage: {
-          url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
+          url: "https://media-exp1.licdn.com/dms/image/C5603AQGIyqF5r81NNA/profile-displayphoto-shrink_800_800/0/1560009182055?e=1668643200&v=beta&t=wXEAvkeAFmF3HS4n1NEmEaww1ZfkC8xgqjpDo0VPfZQ",
         },
-        aboutMe: "",
+        aboutMe:
+          "I am a solution-driven programmer with a four-year track record of recommended performance in modular and object-oriented programming. Well-versed in all phases of the software development lifecycle, with improving knowledge about algorithms and data structures.",
         resumeLink: {
-          url: "Google.com",
+          url: "https://firebasestorage.googleapis.com/v0/b/mest-portfolio.appspot.com/o/jidechi-ukor-resume.pdf?alt=media&token=18165b95-239d-472c-ab9b-bca9b7b00072",
         },
       },
       tools: [
         {
           id: "1",
           image: {
-            url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Ftypescript.svg?alt=media&token=ff0f82c1-0572-486c-9705-f0ab25cab518",
           },
-          name: "Vue",
+          name: "TypeScript",
+        },
+        {
+          id: "2",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Fjavascript.svg?alt=media&token=4518d626-1639-4783-891f-214c5f5764ac",
+          },
+          name: "JavaScript",
+        },
+        {
+          id: "3",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Fsolidity2.png?alt=media&token=9a12b94f-5fc3-4bc2-aa8a-45318f52f112",
+          },
+          name: "Solidity",
+        },
+        {
+          id: "4",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Fpython.svg?alt=media&token=3f3bae3c-f251-4274-b4e9-ec7fe4a84ea3",
+          },
+          name: "Python",
+        },
+        {
+          id: "5",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Fflutter.png?alt=media&token=2633bdca-a8e2-4afd-b10f-6af5db70b351",
+          },
+          name: "Flutter",
+        },
+        {
+          id: "6",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Freact.svg?alt=media&token=7bb627fa-b731-4c01-8cbb-c618ac130e61",
+          },
+          name: "React",
+        },
+        {
+          id: "7",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Fphp.svg?alt=media&token=8b1f3613-8d0c-46a9-9073-d668c3b3eb81",
+          },
+          name: "PHP",
+        },
+        {
+          id: "8",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Ffirebase.svg?alt=media&token=efda7666-0db4-487a-b207-79fd2776b3df",
+          },
+          name: "Firebase",
+        },
+        {
+          id: "9",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Fgithub.svg?alt=media&token=88d0e8d7-807d-433f-b21a-19a5a5f8f31c",
+          },
+          name: "Github",
+        },
+        {
+          id: "10",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2Fjson.svg?alt=media&token=8d32626a-36fa-40e7-9d04-56db8ed0aac5",
+          },
+          name: "REST API",
+        },
+        {
+          id: "11",
+          image: {
+            url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Ftools%2FSocket-io.svg?alt=media&token=8683e23d-3efe-4480-b41b-266b0cf2be63",
+          },
+          name: "Socket.IO",
         },
       ],
       error: null,

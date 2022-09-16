@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Paul Imoke',
+    title: 'Jidechi Ukor',
     htmlAttrs: {
       lang: 'en'
     },

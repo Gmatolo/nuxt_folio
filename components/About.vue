@@ -9,7 +9,17 @@
         />
       </div>
       <div
-        class="rounded-full py-3 px-12 mb-12 mx-auto font-bold mt-8 bg-white text-black text-center"
+        class="
+          rounded-full
+          py-3
+          px-12
+          mb-12
+          mx-auto
+          font-bold
+          mt-8
+          bg-white
+          text-black text-center
+        "
       >
         About Me
       </div>
@@ -19,23 +29,40 @@
           {{ siteData.aboutMe }}
         </p>
 
-        <div
-          class="flex w-95pr justify-center sm:justify-evenly flex-col sm:flex-row"
+        <!-- <div
+          class="
+            flex
+            w-95pr
+            justify-center
+            sm:justify-evenly
+            flex-col
+            sm:flex-row
+          "
+        > -->
+        <button
+          class="
+            rounded-full
+            w-95pr
+            py-3
+            sm:mb-12
+            font-bold
+            mt-8
+            ml-4
+            bg-yellow-500
+            text-white text-center text-lg
+          "
+          @click="downloadResume(siteData.resumeLink.url)"
         >
-          <button
-            class="rounded-full py-3 sm:mb-12 px-8 font-bold mt-8 bg-yellow-500 text-white text-center text-lg"
-            @click="downloadResume(siteData.resumeLink.url)"
-          >
-            Download Resume ↓
-          </button>
+          Download Resume ↓
+        </button>
 
-          <NuxtLink
+        <!-- <NuxtLink
             to="/certificates"
             class="rounded-full py-3 px-12 mb-12 font-bold mt-8 bg-yellow-500 text-white text-center text-lg"
           >
             See Certificates
-          </NuxtLink>
-        </div>
+          </NuxtLink> -->
+        <!-- </div> -->
 
         <div class="mt-12 flex flex-col">
           <p class="ml-4 my-1 text-2xl font-bold text-center mb-6 text-white">
@@ -68,17 +95,17 @@ export default {
   name: "About",
   props: {
     siteData: {
-      type: Object
+      type: Object,
     },
     tools: {
-      type: Array
-    }
+      type: Array,
+    },
   },
   methods: {
     downloadResume(link) {
       window.location.href = link;
-    }
-  }
+    },
+  },
 };
 </script>
 

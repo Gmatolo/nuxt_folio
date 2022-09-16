@@ -1,5 +1,5 @@
 <template>
-  <header class=" fixed inset-y-0 z-100 md:w-0">
+  <header class="fixed inset-y-0 z-100 md:w-0">
     <nav class="bd-grid h-12 flex justify-between top-0 items-center">
       <div class="bg-black lg:hidden text-white ml-2 mt-2 text-4xl">
         <i @click="toggleNav" class="bx bx-menu"></i>
@@ -7,7 +7,14 @@
 
       <div :class="['nav_menu', 'left_t', { show: toggled }]">
         <div
-          class="absolute top-4 lg:hidden right-4 object-right-top text-4xl text-black"
+          class="
+            absolute
+            top-4
+            lg:hidden
+            right-4
+            object-right-top
+            text-4xl text-black
+          "
         >
           <i @click="toggleNav" class="bx bx-x"></i>
         </div>
@@ -21,49 +28,49 @@
               <li class="text-3xl text-black mb-8">
                 <a @click="toggleNav" href="#about">About</a>
               </li>
-              <li class="text-3xl text-black mb-8">
+              <!-- <li class="text-3xl text-black mb-8">
                 <a @click="toggleNav" href="#services">Services</a>
-              </li>
+              </li> -->
               <li class="text-3xl text-black mb-8">
                 <a @click="toggleNav" href="#portfolio">Portfolio</a>
               </li>
-              <li class="text-3xl text-black mb-8">
+              <!-- <li class="text-3xl text-black mb-8">
                 <router-link to="/blog">My Blog</router-link>
-              </li>
+              </li> -->
               <li class="text-3xl text-black mb-8">
                 <a @click="toggleNav" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
 
-          <div class="flex mt-16 justify-center">
+          <div class="flex mt-24 justify-center">
             <div class="mx-2">
-              <a href="https://facebook.com/paul.eke.399"
+              <a href="https://facebook.com/ukorjidechi" target="_blank"
                 ><img src="../assets/images/Facebook.svg" alt=""
               /></a>
             </div>
             <div class="mx-2">
-              <a href="https://instagram.com/pauleke65/"
+              <a href="https://instagram.com/ukor_" target="_blank"
                 ><img src="../assets/images/Instagram.svg" alt=""
               /></a>
             </div>
             <div class="mx-2">
-              <a href="https://twitter.com/PaulEke20"
+              <a href="https://twitter.com/ukor_" target="_blank"
                 ><img src="../assets/images/Twitter.svg" alt=""
               /></a>
             </div>
             <div class="mx-2">
-              <a href="https://linkedin.com/in/paul-imoke-010a941bb/"
+              <a href="https://linkedin.com/in/ukorjidechi/" target="_blank"
                 ><img src="../assets/images/Linkedin.svg" alt=""
               /></a>
             </div>
             <div class="mx-2">
-              <a href="https://github.com/pauleke65"
+              <a href="https://github.com/ukor" target="_blank"
                 ><img src="../assets/images/github.svg" alt=""
               /></a>
             </div>
             <div class="mx-2">
-              <a href="mailto:pauleke65@gmail.com"
+              <a href="mailto:ukorjidechi@gmail.com" target="_blank"
                 ><img src="../assets/images/At Symbol.svg" alt=""
               /></a>
             </div>
@@ -83,16 +90,16 @@ export default {
       duration: 100,
       activeClass: {
         type: String,
-        default: "active"
-      }
+        default: "active",
+      },
     };
   },
 
   methods: {
     toggleNav() {
       this.toggled = !this.toggled;
-    }
-  }
+    },
+  },
 };
 </script>
 
