@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Jidechi Ukor',
+    title: 'Francis Valentine',
     htmlAttrs: {
       lang: 'en'
     },

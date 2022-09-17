@@ -2,11 +2,11 @@
   <section class="h-screen bd-grid items-center" id="home">
     <div class="flex text-white flex-col items-center justify-center h-max">
       <p v-if="developmentMode" class="text-red-400 mb-4">
-        "Site still under active development"
+        ""
       </p>
       <h3 class="text-lg text-center">👋Nice to meet you, I'm</h3>
       <h1 class="text-6xl text-center font-light">
-        Jidechi <span class="font-bold">Ukor</span>
+        Francis <span class="font-bold">Valentine</span>
       </h1>
       <!-- <div
         class="
@@ -110,5 +110,5 @@ export default {
   0% {
     margin-top: -9em;
   }
-}
+}  
 </style>
