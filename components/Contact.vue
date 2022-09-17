@@ -2,7 +2,19 @@
   <section class="bd-grid pb-8 items-center" id="contact">
     <div class="flex pt-8 flex-col items-center justify-center">
       <div
-        class="rounded-full py-3 px-12 mx-auto w-64 h-auto font-bold mt-8 text-2xl bg-white text-black text-center"
+        class="
+          rounded-full
+          py-3
+          px-12
+          mx-auto
+          w-64
+          h-auto
+          font-bold
+          mt-8
+          text-2xl
+          bg-white
+          text-black text-center
+        "
       >
         Contact Me
       </div>
@@ -18,9 +30,19 @@
       </div>
 
       <div
-        class="flex flex-col w-full md:w-95pr bg-gray-900 px-4 md:px-8 pb-8 mt-4 md:pt-4"
+        class="
+          flex flex-col
+          w-full
+          md:w-95pr
+          bg-gray-900
+          px-4
+          md:px-8
+          pb-8
+          mt-4
+          md:pt-4
+        "
       >
-        <div class="flex flex-col md:flex-row ">
+        <div class="flex flex-col md:flex-row">
           <input
             class="mt-4 h-12 pl-4 md:flex-1"
             v-model="fullName"
@@ -59,7 +81,14 @@
         />
         <button
           @click="checkInput"
-          class="text-white text-xl font-semibold bg-yellow-500 w-full mt-4 h-16"
+          class="
+            text-white text-xl
+            font-semibold
+            bg-yellow-500
+            w-full
+            mt-4
+            h-16
+          "
         >
           <span><i class="bx bxs-message-dots"></i></span> Message Me
         </button>
@@ -103,9 +132,10 @@ export default {
       mobile: "",
       subject: "",
       message: "",
+      usermail: "ukorjidechi@gmail.com",
       nameError: true,
       emailError: true,
-      mobileError: true
+      mobileError: true,
     };
   },
 
@@ -119,7 +149,8 @@ export default {
 
     emailCheck() {
       if (this.email.trim() !== "") {
-        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const re =
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         this.emailError = !re.test(this.email.toLowerCase());
       }
     },
@@ -144,43 +175,71 @@ export default {
     },
 
     capital_name(str) {
-      return str.replace(/\w\S*/g, function(txt) {
+      return str.replace(/\w\S*/g, function (txt) {
         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
       });
     },
 
     async submit() {
-      try {
-        const res = await this.$apollo.mutate({
-          mutation: SEND_MESSAGE,
-          variables: {
-            email: this.email.toLowerCase().trim(),
-            full_name: this.fullName,
-            message: this.message,
-            mobile: this.mobile,
-            subject: this.subject
-          }
-        });
+      // const res = await this.$apollo.mutate({
+      //   mutation: SEND_MESSAGE,
+      //   variables: {
+      //     email: this.email.toLowerCase().trim(),
+      //     full_name: this.fullName,
+      //     message: this.message,
+      //     mobile: this.mobile,
+      //     subject: this.subject,
+      //   },
+      // });
 
-        if (res) {
-          alert(
-            `Hi ${this.capital_name(
-              res.data.insert_Messages_one.full_name
-            )} your message on  ${
-              res.data.insert_Messages_one.subject
-            } has been successfully sent.`
-          );
-        }
-      } catch (err) {
-        alert(`Error ${err}`);
-      }
-      this.fullName = "";
-      this.email = "";
-      this.mobile = "";
-      this.subject = "";
-      this.message = "";
-    }
-  }
+      // if (res) {
+      //   alert(
+      //     `Hi ${this.capital_name(
+      //       res.data.insert_Messages_one.full_name
+      //     )} your message on  ${
+      //       res.data.insert_Messages_one.subject
+      //     } has been successfully sent.`
+      //   );
+      // }
+
+      const response = await this.$axios
+        .$post("https://flask-production-4cd5.up.railway.app/send-mail", {
+          name: this.fullName,
+          email: this.email,
+          mobile: this.mobile,
+          subject: this.subject,
+          message: this.message,
+          usermail: this.usermail,
+        })
+        .then(() => {
+          this.fullName = "";
+          this.email = "";
+          this.mobile = "";
+          this.subject = "";
+          this.message = "";
+          alert("Your message was sent successfully!");
+        })
+        .catch(function (error) {
+          if (error.response) {
+            // The request was made and the server responded with a status code
+            // that falls out of the range of 2xx
+
+            alert(`Error ${error.response.status}: ${error.response.data}`);
+
+            // } else if (error.request) {
+            //   // The request was made but no response was received
+            //   // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+            //   // http.ClientRequest in node.js
+            //   console.log(error.request);
+          } else {
+            // Something happened in setting up the request that triggered an Error
+
+            alert(`Could not send message. ${error.message}`);
+          }
+          // console.log(error.config);
+        });
+    },
+  },
 };
 </script>
 
