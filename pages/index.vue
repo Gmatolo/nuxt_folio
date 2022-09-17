@@ -50,7 +50,7 @@ export default {
     return {
       siteData: {
         profileImage: {
-          url: "https://media-exp1.licdn.com/dms/image/C5603AQGIyqF5r81NNA/profile-displayphoto-shrink_800_800/0/1560009182055?e=1668643200&v=beta&t=wXEAvkeAFmF3HS4n1NEmEaww1ZfkC8xgqjpDo0VPfZQ",
+          url: "https://meltwater.org/wp-content/uploads/2021/11/kwes.jpg",
         },
         aboutMe:
           "I am a solution-driven programmer with a four-year track record of recommended performance in modular and object-oriented programming. Well-versed in all phases of the software development lifecycle, with improving knowledge about algorithms and data structures.",

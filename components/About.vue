@@ -3,7 +3,7 @@
     <div class="flex flex-col h-full justify-center">
       <div>
         <img
-          class="rounded-full mx-auto h-44 w-44"
+          class="rounded-full mx-auto h-44 w-44 object-cover"
           :src="siteData.profileImage.url"
           alt=""
         />
