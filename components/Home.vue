@@ -6,7 +6,7 @@
       </p>
       <h3 class="text-lg text-center">👋Nice to meet you, I'm</h3>
       <h1 class="text-6xl text-center font-light">
-        Francis <span class="font-bold">Valentine</span>
+        Francis <span class="font-bold">Val-Neboh</span>
       </h1>
       <!-- <div
         class="
@@ -38,7 +38,7 @@
           text-center
         "
       >
-        A Software Developer
+        Growth & Marketing Specialist
       </div>
     </div>
   </section>
