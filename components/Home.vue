@@ -4,9 +4,9 @@
       <p v-if="developmentMode" class="text-red-400 mb-4">
         "Site still under active development"
       </p>
-      <h3 class="text-lg text-center">👋Nice to meet you, I'm</h3>
+      <h3 class="text-lg text-center">👋Hello There, I'm</h3>
       <h1 class="text-6xl text-center font-light">
-        Jidechi <span class="font-bold">Ukor</span>
+        Imeobong <span class="font-bold">Imoke</span>
       </h1>
       <!-- <div
         class="
@@ -29,7 +29,7 @@
       <div
         class="
           text-yellow-500
-          mt-2
+          mt-4
           text-lg
           h-8
           flex
@@ -38,7 +38,7 @@
           text-center
         "
       >
-        A Software Developer
+        Business Development Manager
       </div>
     </div>
   </section>

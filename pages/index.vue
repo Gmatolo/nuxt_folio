@@ -50,12 +50,12 @@ export default {
     return {
       siteData: {
         profileImage: {
-          url: "https://media-exp1.licdn.com/dms/image/C5603AQGIyqF5r81NNA/profile-displayphoto-shrink_800_800/0/1560009182055?e=1668643200&v=beta&t=wXEAvkeAFmF3HS4n1NEmEaww1ZfkC8xgqjpDo0VPfZQ",
+          url: "https://firebasestorage.googleapis.com/v0/b/paul-portfolio-6aec1.appspot.com/o/upload%2Fimeobong.jpg?alt=media&token=02481d6a-3a4d-4183-8c6a-872456f17982",
         },
         aboutMe:
-          "I am a solution-driven programmer with a four-year track record of recommended performance in modular and object-oriented programming. Well-versed in all phases of the software development lifecycle, with improving knowledge about algorithms and data structures.",
+          "Imeobong Imoke is an amazing administrator with many years of experience and expertise under her belt. She is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. She is also the Founder and Director of Coolblue Ventures Ltd.",
         resumeLink: {
-          url: "https://firebasestorage.googleapis.com/v0/b/mest-portfolio.appspot.com/o/jidechi-ukor-resume.pdf?alt=media&token=18165b95-239d-472c-ab9b-bca9b7b00072",
+          url: "",
         },
       },
       tools: [

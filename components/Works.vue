@@ -1,7 +1,7 @@
 <template>
   <section class="bd-grid items-center" id="portfolio">
     <div class="flex pt-8 flex-col items-center justify-center">
-      <div
+      <!-- <div
         class="
           rounded-full
           py-3
@@ -17,14 +17,14 @@
         "
       >
         Portfolio
-      </div>
+      </div> -->
       <a
-        class="w-95pr"
+        class="my-44"
         target="_blank"
-        href="https://github.com/ukor?tab=repositories"
+        href="https://www.linkedin.com/in/patience-imoke-eke-a77690200/"
       >
-        <div class="bg-cover relative flex">
-          <img src="~/assets/images/projects.png" alt="" srcset="" />
+        <div class="">
+          <img src="~/assets/images/more.png" alt="" srcset="" />
         </div>
       </a>
     </div>

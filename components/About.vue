@@ -3,7 +3,7 @@
     <div class="flex flex-col h-full justify-center">
       <div>
         <img
-          class="rounded-full mx-auto h-44 w-44"
+          class="rounded-full mx-auto h-44 w-44 object-cover"
           :src="siteData.profileImage.url"
           alt=""
         />
@@ -63,7 +63,7 @@
             See Certificates
           </NuxtLink> -->
         <!-- </div> -->
-
+        <!-- 
         <div class="mt-12 flex flex-col">
           <p class="ml-4 my-1 text-2xl font-bold text-center mb-6 text-white">
             My Favorite Tools
@@ -84,7 +84,7 @@
               <p class="text-black text-xl text-center">{{ tool.name }}</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
