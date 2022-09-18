@@ -53,7 +53,7 @@ export default {
           url: "https://media-exp1.licdn.com/dms/image/C5603AQGIyqF5r81NNA/profile-displayphoto-shrink_800_800/0/1560009182055?e=1668643200&v=beta&t=wXEAvkeAFmF3HS4n1NEmEaww1ZfkC8xgqjpDo0VPfZQ",
         },
         aboutMe:
-          "I am a solution-driven programmer with a four-year track record of recommended performance in modular and object-oriented programming. Well-versed in all phases of the software development lifecycle, with improving knowledge about algorithms and data structures.",
+          "Francis Val-Neboh - copywriter, paid traffic and customer acquisition expert - has been helping businesses grow by harnessing digital marketing platforms, and strategies using trainings and live workshops since 2014. He is the Founder, CEO at Kunyite Digital- a digital marketing and customer acquisition agency founded in 2019. His mission is to help 10,000 businesses STAND OUT and DOMINATE in their industries by leveraging the arsenal the internet provides.",
         resumeLink: {
           url: "https://firebasestorage.googleapis.com/v0/b/mest-portfolio.appspot.com/o/jidechi-ukor-resume.pdf?alt=media&token=18165b95-239d-472c-ab9b-bca9b7b00072",
         },
