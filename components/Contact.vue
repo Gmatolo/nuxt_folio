@@ -132,7 +132,7 @@ export default {
       mobile: "",
       subject: "",
       message: "",
-      usermail: "ukorjidechi@gmail.com",
+      usermail: "francis.valneboh@gmail.com",
       nameError: true,
       emailError: true,
       mobileError: true,

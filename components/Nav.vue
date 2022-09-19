@@ -45,32 +45,36 @@
 
           <div class="flex mt-24 justify-center">
             <div class="mx-2">
-              <a href="https://facebook.com/ukorjidechi" target="_blank"
+              <a href="https://facebook.com/francis.valneboh" target="_blank"
                 ><img src="../assets/images/Facebook.svg" alt=""
               /></a>
             </div>
             <div class="mx-2">
-              <a href="https://instagram.com/ukor_" target="_blank"
+              <a
+                href="https://instagram.com/mr_growth_executive"
+                target="_blank"
                 ><img src="../assets/images/Instagram.svg" alt=""
               /></a>
             </div>
             <div class="mx-2">
-              <a href="https://twitter.com/ukor_" target="_blank"
+              <a href="https://twitter.com/francisvalneboh" target="_blank"
                 ><img src="../assets/images/Twitter.svg" alt=""
               /></a>
             </div>
             <div class="mx-2">
-              <a href="https://linkedin.com/in/ukorjidechi/" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/francis-val-neboh-a9201216a/"
+                target="_blank"
                 ><img src="../assets/images/Linkedin.svg" alt=""
               /></a>
             </div>
-            <div class="mx-2">
+            <!-- <div class="mx-2">
               <a href="https://github.com/ukor" target="_blank"
                 ><img src="../assets/images/github.svg" alt=""
               /></a>
-            </div>
+            </div> -->
             <div class="mx-2">
-              <a href="mailto:ukorjidechi@gmail.com" target="_blank"
+              <a href="mailto:francis.valneboh@gmail.com" target="_blank"
                 ><img src="../assets/images/At Symbol.svg" alt=""
               /></a>
             </div>

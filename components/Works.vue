@@ -1,7 +1,7 @@
 <template>
   <section class="bd-grid items-center" id="portfolio">
     <div class="flex pt-8 flex-col items-center justify-center">
-      <div
+      <!-- <div
         class="
           rounded-full
           py-3
@@ -17,14 +17,18 @@
         "
       >
         Portfolio
-      </div>
+      </div> -->
       <a
-        class="w-95pr"
+        class=""
         target="_blank"
-        href="https://github.com/ukor?tab=repositories"
+        href="https://www.linkedin.com/in/francis-val-neboh-a9201216a/"
       >
-        <div class="bg-cover relative flex">
-          <img src="~/assets/images/projects.png" alt="" srcset="" />
+        <div class="w-full my-44">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/portfolios-aaca9.appspot.com/o/more.png?alt=media&token=e65a4fe1-a091-4a8f-9bff-c9fafa26aa7e"
+            alt=""
+            srcset=""
+          />
         </div>
       </a>
     </div>
